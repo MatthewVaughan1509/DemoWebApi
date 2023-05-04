@@ -1,0 +1,23 @@
+.item {
+    border: 1px solid lightgray;
+    border-collapse: collapse;
+    padding: 5px;
+}
+
+.content {
+    padding: 10px;
+}
+
+::ng-deep .dx-treelist-headers {
+    display: none;
+}
+
+.left-side-bar {
+    padding: 0;
+    position: fixed !important;
+    width: 20% !important;
+}
+
+::ng-deep .dx-treelist-content {
+    background-color: #f5f7f9;
+}

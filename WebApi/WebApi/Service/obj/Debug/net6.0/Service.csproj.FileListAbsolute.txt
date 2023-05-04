@@ -1,0 +1,15 @@
+C:\GIT\PlantData Suite\GitDemo\WebApi\WebApi\Service\bin\Debug\net6.0\Service.deps.json
+C:\GIT\PlantData Suite\GitDemo\WebApi\WebApi\Service\bin\Debug\net6.0\Service.dll
+C:\GIT\PlantData Suite\GitDemo\WebApi\WebApi\Service\bin\Debug\net6.0\Service.pdb
+C:\GIT\PlantData Suite\GitDemo\WebApi\WebApi\Service\obj\Debug\net6.0\Service.csproj.AssemblyReference.cache
+C:\GIT\PlantData Suite\GitDemo\WebApi\WebApi\Service\obj\Debug\net6.0\Service.GeneratedMSBuildEditorConfig.editorconfig
+C:\GIT\PlantData Suite\GitDemo\WebApi\WebApi\Service\obj\Debug\net6.0\Service.AssemblyInfoInputs.cache
+C:\GIT\PlantData Suite\GitDemo\WebApi\WebApi\Service\obj\Debug\net6.0\Service.AssemblyInfo.cs
+C:\GIT\PlantData Suite\GitDemo\WebApi\WebApi\Service\obj\Debug\net6.0\Service.csproj.CoreCompileInputs.cache
+C:\GIT\PlantData Suite\GitDemo\WebApi\WebApi\Service\obj\Debug\net6.0\Service.dll
+C:\GIT\PlantData Suite\GitDemo\WebApi\WebApi\Service\obj\Debug\net6.0\refint\Service.dll
+C:\GIT\PlantData Suite\GitDemo\WebApi\WebApi\Service\obj\Debug\net6.0\Service.pdb
+C:\GIT\PlantData Suite\GitDemo\WebApi\WebApi\Service\obj\Debug\net6.0\ref\Service.dll
+C:\GIT\PlantData Suite\GitDemo\WebApi\WebApi\Service\bin\Debug\net6.0\DataModel.dll
+C:\GIT\PlantData Suite\GitDemo\WebApi\WebApi\Service\bin\Debug\net6.0\DataModel.pdb
+C:\GIT\PlantData Suite\GitDemo\WebApi\WebApi\Service\obj\Debug\net6.0\Service.csproj.CopyComplete

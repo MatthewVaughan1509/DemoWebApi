@@ -1,0 +1,40 @@
+<div id="home-container">
+  <app-context-menu (onManualChange)="onManualChange($event)"></app-context-menu>
+
+  <dx-responsive-box>
+    <dxi-row [ratio]="1"></dxi-row>
+
+    <dxi-col [ratio]="1"></dxi-col>
+    <dxi-col [ratio]="4"></dxi-col>
+
+    <dxi-item>
+      <dxi-location [row]="0" [col]="0"></dxi-location>
+      <div *dxTemplate class="left-side-bar item">
+        <dx-tree-list #treelist id="manual-contents" [style.height.px]="treeListHeight" [dataSource]="manualContents"
+          keyExpr="id" parentIdExpr="parentId" [columnAutoWidth]="true" [wordWrapEnabled]="true" [showBorders]="true"
+          [(selectedRowKeys)]="selectedRowKeys" [(expandedRowKeys)]="expandedRowKeys" [autoExpandAll]="true"
+          focusedRowEnabled="true" (onCellClick)="onTreeListCellClick($event)"
+          (onCellPrepared)="onCellPrepared($event)">
+          <dxo-selection mode="single"></dxo-selection>
+          <dxo-column-chooser [enabled]="false"></dxo-column-chooser>
+          <dxi-column dataField="name" caption=""></dxi-column>
+        </dx-tree-list>
+      </div>
+    </dxi-item>
+
+    <dxi-item>
+      <dxi-location [row]="0" [col]="1"></dxi-location>
+      <div *dxTemplate class="content">
+        <app-page-content [pageId]="pageId" [manualId]="manualId" *ngIf="contentVisible"></app-page-content>
+      </div>
+    </dxi-item>
+
+  </dx-responsive-box>
+
+</div>
+
+<dx-tooltip>
+  <div *dxTemplate="let data = data of 'content'">
+    <span>{{tooltipContent}}</span>
+  </div>
+</dx-tooltip>

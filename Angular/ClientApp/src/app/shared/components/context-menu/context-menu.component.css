@@ -1,0 +1,17 @@
+#context-menu-container {
+    background-color: #f5f7f9;
+    position: sticky;
+    top: 55px;
+    z-index: 1;
+    box-shadow: 0 1px 3px rgb(0 0 0 / 12%), 0 1px 2px rgb(0 0 0 / 24%);
+}
+
+.item {
+    border: 1px solid lightgray;
+    border-collapse: collapse;
+    padding: 5px;
+}
+
+.margin-top-5 {
+    margin-top: 5px;
+}

@@ -1,0 +1,34 @@
+<div id="context-menu-container">
+  <dx-responsive-box height="60px">
+    <dxi-row [ratio]="1"></dxi-row>
+
+    <dxi-col [ratio]="1"></dxi-col>
+    <dxi-col [ratio]="3"></dxi-col>
+    <dxi-col [ratio]="1"></dxi-col>
+
+    <dxi-item>
+      <dxi-location [row]="0" [col]="0"></dxi-location>
+      <div *dxTemplate class="left-side-bar item">
+        <dx-select-box class="margin-top-5" [dataSource]="manuals" valueExpr="id" [(value)]="manualId" [visible]="manualsVisible"
+          displayExpr="name" (onValueChanged)="onManualChanged($event)">
+        </dx-select-box>
+      </div>
+    </dxi-item>
+
+    <dxi-item>
+      <dxi-location [row]="0" [col]="1"></dxi-location>
+      <div *dxTemplate class="item">
+        <app-top-menu></app-top-menu>
+      </div>
+    </dxi-item>
+
+    <dxi-item>
+      <dxi-location [row]="0" [col]="2"></dxi-location>
+      <div *dxTemplate class="right-side-bar item">
+        <dx-text-box class="margin-top-5" mode="search" placeholder="Search" [showClearButton]="true" [visible]="searchVisible"></dx-text-box>
+      </div>
+    </dxi-item>
+
+  </dx-responsive-box>
+
+</div>

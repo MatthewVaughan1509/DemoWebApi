@@ -1,0 +1,32 @@
+<dx-popup id="error-notification" *ngIf="notification && showPopup" [width]="550" [height]="400"
+    [showTitle]="true" [title]="title" [dragEnabled]="false" [closeOnOutsideClick]="true"
+    [visible]="notification && showPopup" (onShowing)="onPopupShowing($event)"
+    (onHiding)="onPopUpClosing($event)">
+    <div *dxTemplate="let data of 'content'">
+        <p *ngIf="notification.message">
+            {{ notification.message }}
+        </p>
+        <p *ngIf="!notification.message">
+            We were unable to process your request due to technical difficulties.
+        </p>
+        <br />
+        <dx-accordion *ngIf="errorDataSource && errorDataSource.length > 0" #accordion [dataSource]="errorDataSource"
+            [collapsible]="true" [multiple]="false" [animationDuration]="300" [selectedIndex]="-1">
+            <div *dxTemplate="let error of 'title'">
+                <span>Technical Details</span>
+            </div>
+            <div *dxTemplate="let error of 'item'">
+                <div>
+                    <p>
+                        <span id="tech-details">{{error.TechnicalDetails}}</span>
+                    </p>
+                </div>
+            </div>
+        </dx-accordion>
+    </div>
+</dx-popup>
+
+<dx-toast *ngIf="toaster && toaster.isToastVisible" message="{{toaster.toastMessage}}" position="top"
+    [(displayTime)]="toaster.displayTime" [(type)]="toaster.toastType" width="500px"
+    [(visible)]="toaster && toaster.isToastVisible">
+</dx-toast>
