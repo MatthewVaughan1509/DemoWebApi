@@ -15,7 +15,7 @@ namespace Service.Implementations
 
         public List<PagesDto> GetAllPages()
         {
-            throw new NotImplementedException();
+            return _pageRepository.GetAllPages();
         }
     }
 }

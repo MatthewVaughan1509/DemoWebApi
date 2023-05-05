@@ -29,3 +29,12 @@ C:\GIT\PlantData Suite\GitDemo\WebApi\WebApi\WebApi\obj\Debug\net6.0\refint\WebA
 C:\GIT\PlantData Suite\GitDemo\WebApi\WebApi\WebApi\obj\Debug\net6.0\WebApi.pdb
 C:\GIT\PlantData Suite\GitDemo\WebApi\WebApi\WebApi\obj\Debug\net6.0\WebApi.genruntimeconfig.cache
 C:\GIT\PlantData Suite\GitDemo\WebApi\WebApi\WebApi\obj\Debug\net6.0\ref\WebApi.dll
+C:\GIT\PlantData Suite\GitDemo\WebApi\WebApi\WebApi\bin\Debug\net6.0\Dapper.dll
+C:\GIT\PlantData Suite\GitDemo\WebApi\WebApi\WebApi\bin\Debug\net6.0\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\GIT\PlantData Suite\GitDemo\WebApi\WebApi\WebApi\bin\Debug\net6.0\Microsoft.Extensions.Primitives.dll
+C:\GIT\PlantData Suite\GitDemo\WebApi\WebApi\WebApi\bin\Debug\net6.0\System.Data.SqlClient.dll
+C:\GIT\PlantData Suite\GitDemo\WebApi\WebApi\WebApi\bin\Debug\net6.0\runtimes\win-arm64\native\sni.dll
+C:\GIT\PlantData Suite\GitDemo\WebApi\WebApi\WebApi\bin\Debug\net6.0\runtimes\win-x64\native\sni.dll
+C:\GIT\PlantData Suite\GitDemo\WebApi\WebApi\WebApi\bin\Debug\net6.0\runtimes\win-x86\native\sni.dll
+C:\GIT\PlantData Suite\GitDemo\WebApi\WebApi\WebApi\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\GIT\PlantData Suite\GitDemo\WebApi\WebApi\WebApi\bin\Debug\net6.0\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll

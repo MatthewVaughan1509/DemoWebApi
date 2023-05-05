@@ -5,5 +5,6 @@ namespace DataModel.Interfaces
 {
     public interface IPageRepository : IRepository<PagesDto>
     {
+        public List<PagesDto> GetAllPages();
     }
 }

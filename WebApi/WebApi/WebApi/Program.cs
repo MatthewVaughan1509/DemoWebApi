@@ -2,6 +2,7 @@ using Service.Implementations;
 using Service.Interface;
 using DataModel.Interfaces;
 using DataModel.Implementations;
+using PPM.Insights.DataModel;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -15,6 +16,7 @@ builder.Services.AddSwaggerGen();
 var services = new ServiceCollection();
 builder.Services.AddTransient<IPageService, PageService>();
 builder.Services.AddTransient<IPageRepository, PageRepository>();
+builder.Services.AddTransient<IConnections, Connections>();
 
 var app = builder.Build();
 

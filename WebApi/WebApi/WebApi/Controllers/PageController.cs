@@ -23,7 +23,7 @@ namespace WebApi.Controllers
         [Route("GetAllPages")]
         public IActionResult GetAllPages()
         {
-            return Ok("Fuck Off!");
+            return Ok(_pageService.GetAllPages());
         }
     }
 }
