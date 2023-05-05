@@ -4,6 +4,6 @@ namespace PPM.Insights.DataModel
 {
     public interface IConnections
     {
-        IDbConnection PlantDataCoreConnection { get; }
+        IDbConnection Connection { get; }
     }
 }

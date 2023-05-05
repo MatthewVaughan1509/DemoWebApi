@@ -18,7 +18,19 @@ builder.Services.AddTransient<IPageService, PageService>();
 builder.Services.AddTransient<IPageRepository, PageRepository>();
 builder.Services.AddTransient<IConnections, Connections>();
 
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy(name: "CorsOrigins",
+        builder =>
+        {
+            builder.WithOrigins("http://localhost:4200")
+                .AllowAnyHeader()
+                .AllowAnyMethod();
+        });
+});
+
 var app = builder.Build();
+app.UseCors("CorsOrigins");
 
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())

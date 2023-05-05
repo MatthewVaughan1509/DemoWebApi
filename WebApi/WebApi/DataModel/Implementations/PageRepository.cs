@@ -30,7 +30,7 @@ namespace DataModel.Implementations
                           FROM [Help].[Page] P
                           ORDER BY P.Name";
 
-            using (var db = _connections.PlantDataCoreConnection)
+            using (var db = _connections.Connection)
             {
                 return db.Query<PagesDto>(query).ToList();
             }
