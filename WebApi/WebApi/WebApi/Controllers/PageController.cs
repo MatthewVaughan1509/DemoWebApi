@@ -25,5 +25,16 @@ namespace WebApi.Controllers
         {
             return Ok(_pageService.GetAllPages());
         }
+
+        /// <summary>
+        /// Return all pages.
+        /// </summary>
+        /// <returns></returns>
+        [HttpGet]
+        [Route("GetPageById")]
+        public IActionResult GetPageById(int id)
+        {
+            return Ok(_pageService.GetById(id));
+        }
     }
 }

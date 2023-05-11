@@ -17,5 +17,10 @@ namespace Service.Implementations
         {
             return _pageRepository.GetAllPages();
         }
+
+        public Page GetById(int id)
+        {
+            return _pageRepository.GetById(id);
+        }
     }
 }

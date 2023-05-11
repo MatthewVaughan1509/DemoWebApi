@@ -5,6 +5,10 @@ using PPM.Insights.DataModel;
 
 namespace DataModel.Implementations
 {
+    /// <summary>
+    /// This is an instance of the page repository.
+    /// Normally we would use stored procedures but for the purpose of example I am just runnning embeded SQL.
+    /// </summary>
     public class PageRepository : IPageRepository
     {
         private readonly IConnections _connections;
@@ -19,6 +23,10 @@ namespace DataModel.Implementations
             throw new NotImplementedException();
         }
 
+        /// <summary>
+        /// Get all pages for the grid view.
+        /// </summary>
+        /// <returns></returns>
         public List<PagesDto> GetAllPages()
         {
             var query = @"SELECT P.Id
@@ -37,22 +45,40 @@ namespace DataModel.Implementations
 
         }
 
-        public PagesDto GetById(int id)
+        /// <summary>
+        /// Get a page by Id.
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns></returns>
+        public Page GetById(int id)
+        {
+            var query = @"SELECT P.Id
+                                ,P.Name
+                                ,Html AS HtmlText
+                                ,P.InsertedBy
+                                ,P.InsertedOn
+                                ,P.ModifiedBy
+                                ,P.ModifiedOn
+                          FROM [Help].[Page] P
+                          WHERE Id = @Id";
+
+            using (var db = _connections.Connection)
+            {
+                return db.Query<Page>(query, new { id }).FirstOrDefault();
+            }
+        }
+
+        public Page Insert(Page entity)
         {
             throw new NotImplementedException();
         }
 
-        public PagesDto Insert(PagesDto entity)
+        public List<Page> List()
         {
             throw new NotImplementedException();
         }
 
-        public List<PagesDto> List()
-        {
-            throw new NotImplementedException();
-        }
-
-        public void Update(PagesDto entity)
+        public void Update(Page entity)
         {
             throw new NotImplementedException();
         }
