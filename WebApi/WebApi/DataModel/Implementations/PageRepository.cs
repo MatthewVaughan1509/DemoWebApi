@@ -80,7 +80,7 @@ namespace DataModel.Implementations
 
         public void Update(Page entity)
         {
-            throw new NotImplementedException();
+            // Put the update here.
         }
     }
 }

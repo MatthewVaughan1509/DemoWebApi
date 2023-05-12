@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using DataModel.Domain;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Service.Interface;
 
@@ -31,10 +32,22 @@ namespace WebApi.Controllers
         /// </summary>
         /// <returns></returns>
         [HttpGet]
-        [Route("GetPageById")]
+        [Route("GetPageById/{id}")]
         public IActionResult GetPageById(int id)
         {
             return Ok(_pageService.GetById(id));
+        }
+
+        /// <summary>
+        /// Update page.
+        /// </summary>
+        /// <returns></returns>
+        [HttpPost]
+        [Route("UpdatePage")]
+        public IActionResult UpdatePage(Page page)
+        {
+            _pageService.UpdatePage(page);
+            return Ok();
         }
     }
 }

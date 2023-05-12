@@ -22,5 +22,10 @@ namespace Service.Implementations
         {
             return _pageRepository.GetById(id);
         }
+
+        public void UpdatePage(Page page)
+        {
+            _pageRepository.Update(page);
+        }
     }
 }

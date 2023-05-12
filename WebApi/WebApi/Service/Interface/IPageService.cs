@@ -6,5 +6,6 @@ namespace Service.Interface
     {
         public List<PagesDto> GetAllPages();
         public Page GetById(int id);
+        public void UpdatePage(Page page);
     }
 }
